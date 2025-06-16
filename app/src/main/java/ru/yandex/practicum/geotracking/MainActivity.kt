@@ -57,6 +57,14 @@ class MainActivity : ComponentActivity() {
         ActivityTransition.Builder()
             .setActivityType(DetectedActivity.STILL)
             .setActivityTransition(ActivityTransition.ACTIVITY_TRANSITION_EXIT)
+            .build(),
+        ActivityTransition.Builder()
+            .setActivityType(DetectedActivity.IN_VEHICLE)
+            .setActivityTransition(ActivityTransition.ACTIVITY_TRANSITION_ENTER)
+            .build(),
+        ActivityTransition.Builder()
+            .setActivityType(DetectedActivity.IN_VEHICLE)
+            .setActivityTransition(ActivityTransition.ACTIVITY_TRANSITION_EXIT)
             .build()
     )
 
